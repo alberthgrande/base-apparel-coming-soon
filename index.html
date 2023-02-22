@@ -9,7 +9,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./app/images/favicon-32x32.png"
     />
 
     <title>Frontend Mentor | Base Apparel coming soon page</title>
@@ -18,20 +18,42 @@
     <link rel="stylesheet" href="./dist/style.css" />
   </head>
   <body>
-    We're coming soon
-    <!--  -->
-    Hello fellow shoppers! We're currently building our new fashion store. Add
-    your email below to stay up-to-date with announcements and our launch deals.
-    <!--  -->
-    Email Address
+    <main>
+      <div class="container">
+        <article>
+          We're coming soon
+          <!--  -->
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+          <!--  -->
+          Email Address
+        </article>
 
-    <footer>
+        <section>
+          <picture>
+            <source
+              class="hero"
+              media="(max-width: 48rem)"
+              srcset="./app/images/hero-mobile.jpg"
+            />
+            <img
+              class="hero"
+              src="./app/images/hero-desktop.jpg"
+              alt="as pretty as a picture woman"
+            />
+          </picture>
+        </section>
+      </div>
+    </main>
+
+    <!-- <footer>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
-    </footer>
+    </footer> -->
   </body>
 </html>

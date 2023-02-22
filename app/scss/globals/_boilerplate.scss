@@ -1,7 +1,25 @@
+$linearOne: linear-gradient(
+  135deg,
+  from hsl(0, 0%, 100%),
+  to hsl(0, 100%, 98%)
+);
+$linearTwo: linear-gradient(135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%));
+
 body {
-  background-color: var(--primary-desaturated-red);
+  background-color: hsl(0, 100%, 98%);
 }
 
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+}
+
+.hero {
+  width: 100%;
+}
 // footer
 .attribution {
   font-size: 11px;
