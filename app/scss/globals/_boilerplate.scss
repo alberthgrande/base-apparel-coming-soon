@@ -1,30 +1,37 @@
-$linearOne: linear-gradient(
-  135deg,
-  from hsl(0, 0%, 100%),
-  to hsl(0, 100%, 98%)
-);
-$linearTwo: linear-gradient(135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%));
-
 body {
-  background-color: hsl(0, 100%, 98%);
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+}
+
+.article-container {
+  background: {
+    color: hsl(0, 100%, 98%);
+    image: url("../app/images/bg-pattern-desktop.svg");
+    repeat: no-repeat;
+    size: cover;
+  }
+  min-height: 100vh;
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 0;
-  padding: 0;
-  width: fit-content;
+  grid-template-columns: 60% 40%;
 }
 
 .hero {
   width: 100%;
+  object-fit: cover;
 }
-// footer
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  a {
-    color: hsl(228, 45%, 44%);
-  }
+
+.apparel-title {
+  color: var(--neutral-dark-grayish-red);
+  font-weight: var(--fw-600);
+  letter-spacing: 3px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.apparel-sub {
+  color: var(--primary-desaturated-red);
+  font-weight: var(--fw-300);
 }

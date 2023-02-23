@@ -1,6 +1,42 @@
+@media only screen and (min-width: 48rem) {
+  .hero {
+    height: 100vh;
+  }
+}
+
 @media only screen and (max-width: 48rem) {
   .container {
     display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .article-container img {
+    display: none;
+  }
+
+  .base-apparel-logo {
+    background: {
+      image: url(../app/images/logo.svg);
+      repeat: no-repeat;
+    }
+    margin: 2rem;
+    padding: 1rem;
+  }
+
+  .article-container {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .apparel-title {
+    font-size: 3rem;
+    margin: 3.5rem 0 1rem;
+  }
+
+  .apparel-sub {
+    color: var(--primary-desaturated-red);
+    font-weight: var(--fw-300);
   }
 }

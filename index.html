@@ -16,18 +16,42 @@
 
     <!-- link css -->
     <link rel="stylesheet" href="./dist/style.css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
+      <div class="base-apparel-logo"></div>
       <div class="container">
-        <article>
-          We're coming soon
+        <article class="article-container">
+          <img src="./app/images/logo.svg" alt="base-apparel-logo" />
+          <h1 class="apparel-title">
+            <span class="apparel-sub">We're</span> coming soon
+          </h1>
           <!--  -->
-          Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcements and our
-          launch deals.
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
           <!--  -->
-          Email Address
+          <div class="form-group">
+            <label for=""></label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Email Address"
+            />
+            <button type="button" class="btn btn-primary">
+              <img src="./app/images/icon-arrow.svg" alt="" />
+            </button>
+          </div>
         </article>
 
         <section>
