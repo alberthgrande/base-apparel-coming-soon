@@ -11,6 +11,10 @@
   position: relative;
 }
 
+input.form-control {
+  background: transparent;
+}
+
 input.form-control:focus {
   outline: 1px solid var(--primary-desaturated-red);
 }
