@@ -66,13 +66,14 @@
     justify-content: center;
   }
   .form-control {
-    padding: 0.5rem;
+    padding: 0.7rem;
     border-radius: 20rem;
   }
   input.form-control {
     width: 270px;
     border: 1px solid var(--primary-desaturated-red);
     color: var(--neutral-dark-grayish-red);
+    font-size: 14px;
   }
 
   button.form-control {
@@ -85,7 +86,7 @@
   }
   .error-image {
     position: absolute;
-    top: 0.45rem;
+    top: 0.7rem;
     right: 4rem;
   }
 }
