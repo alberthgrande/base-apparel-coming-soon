@@ -24,33 +24,53 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
   </head>
   <body>
     <main>
       <div class="base-apparel-logo"></div>
       <div class="container">
         <article class="article-container">
-          <img src="./app/images/logo.svg" alt="base-apparel-logo" />
-          <h1 class="apparel-title">
-            <span class="apparel-sub">We're</span> coming soon
-          </h1>
-          <!--  -->
-          <p>
-            Hello fellow shoppers! We're currently building our new fashion
-            store. Add your email below to stay up-to-date with announcements
-            and our launch deals.
-          </p>
-          <!--  -->
-          <div class="form-group">
-            <label for=""></label>
-            <input
-              type="email"
-              class="form-control"
-              placeholder="Email Address"
-            />
-            <button type="button" class="btn btn-primary">
-              <img src="./app/images/icon-arrow.svg" alt="" />
-            </button>
+          <div class="apparel-container">
+            <img src="./app/images/logo.svg" alt="base-apparel-logo" />
+            <h1 class="apparel-title">
+              <span class="apparel-sub">We're</span> coming soon
+            </h1>
+
+            <p class="apparel-text">
+              Hello fellow shoppers! We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our launch deals. <br />
+              Challenge by
+              <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+              >. Coded by <a href="#">Alberth Grande</a>.
+            </p>
+
+            <div id="form">
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailField"
+                  placeholder="Email address..."
+                />
+                <div class="error-image"></div>
+                <span class="error-msg"></span>
+              </div>
+              <div class="form-group">
+                <button class="arrow-icon form-control" id="btnSubmit">
+                  <i class="fa-solid fa-angle-up"></i>
+                </button>
+              </div>
+            </div>
           </div>
         </article>
 
@@ -71,13 +91,8 @@
       </div>
     </main>
 
-    <!-- <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer> -->
+    <footer></footer>
+
+    <script src="./app/js/scrip.js"></script>
   </body>
 </html>

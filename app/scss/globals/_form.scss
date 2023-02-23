@@ -1,4 +1,41 @@
-input[type="email"] {
-  //   width: 340px;
-  padding: 0.5rem;
+#form {
+  margin: 2rem auto;
+  display: flex;
+  position: relative;
+}
+.form-control {
+  padding: 0.7rem;
+  border-radius: 20rem;
+}
+.form-group {
+  position: relative;
+}
+
+input.form-control:focus {
+  outline: 1px solid var(--primary-desaturated-red);
+}
+
+button.form-control {
+  cursor: pointer;
+}
+button.form-control:active {
+  transform: scale(0.98);
+  box-shadow: var(--linearTwo) 0px 5px 15px;
+}
+
+.error-image {
+  background: {
+    image: url(../app/images/icon-error.svg);
+    repeat: no-repeat;
+  }
+  right: 4.5rem;
+  top: 0.7rem;
+  padding: 1rem;
+  position: absolute;
+  display: none;
+}
+
+.error-msg {
+  color: var(--primary-soft-red);
+  display: none;
 }

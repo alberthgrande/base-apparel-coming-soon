@@ -2,6 +2,23 @@
   .hero {
     height: 100vh;
   }
+
+  // form
+  input.form-control {
+    width: 100%;
+    min-width: 420px;
+    border: 1px solid var(--primary-desaturated-red);
+    color: var(--neutral-dark-grayish-red);
+  }
+
+  button.form-control {
+    background: var(--linearTwo);
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    width: 80px;
+    right: -1rem;
+  }
 }
 
 @media only screen and (max-width: 48rem) {
@@ -38,5 +55,37 @@
   .apparel-sub {
     color: var(--primary-desaturated-red);
     font-weight: var(--fw-300);
+  }
+
+  .apparel-text {
+    margin: 0 1rem;
+  }
+
+  // form
+  #form {
+    justify-content: center;
+  }
+  .form-control {
+    padding: 0.5rem;
+    border-radius: 20rem;
+  }
+  input.form-control {
+    width: 270px;
+    border: 1px solid var(--primary-desaturated-red);
+    color: var(--neutral-dark-grayish-red);
+  }
+
+  button.form-control {
+    background: var(--linearTwo);
+    border: none;
+    cursor: pointer;
+    width: 80px;
+    position: absolute;
+    right: -1rem;
+  }
+  .error-image {
+    position: absolute;
+    top: 0.45rem;
+    right: 4rem;
   }
 }

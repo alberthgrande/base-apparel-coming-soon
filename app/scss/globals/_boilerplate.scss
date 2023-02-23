@@ -13,6 +13,11 @@ body {
   min-height: 100vh;
 }
 
+.apparel-container {
+  margin: 3rem auto 0;
+  max-width: 450px;
+}
+
 .container {
   display: grid;
   grid-template-columns: 60% 40%;
@@ -26,12 +31,26 @@ body {
 .apparel-title {
   color: var(--neutral-dark-grayish-red);
   font-weight: var(--fw-600);
-  letter-spacing: 3px;
+  font-size: 4rem;
+  letter-spacing: 1rem;
   line-height: 1;
+  margin: 5rem 0 1rem;
   text-transform: uppercase;
 }
 
 .apparel-sub {
   color: var(--primary-desaturated-red);
   font-weight: var(--fw-300);
+}
+
+.apparel-text,
+a {
+  color: var(--primary-desaturated-red);
+}
+
+// button
+.arrow-icon i {
+  transform: rotate(90deg);
+  color: hsl(0, 100%, 98%);
+  font-size: 1.3rem;
 }
